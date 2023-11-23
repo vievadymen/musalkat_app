@@ -1,0 +1,116 @@
+/* Réinitialisation de certaines valeurs par défaut du navigateur */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Pour permettre à la barre latérale et au contenu principal de s'afficher côte à côte */
+}
+
+.sidebar {
+    width: 20%; /* Largeur de la barre latérale */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    flex-grow: 1; /* Permet au contenu principal de prendre toute la largeur restante */
+    padding: 20px;
+    background-image: url('background2.jpg'); /* Remplacez 'background2.jpg' par le chemin de votre image de fond */
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    padding: 20px;
+}
+
+.audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.audio-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Pour créer une grille de 3 colonnes */
+}
+
+audio {
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+}
+
+
+
+
+/* Styles supplémentaires pour le reste de votre mise en page */
+
